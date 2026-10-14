@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+.main-container {
+    width: 780px;
+    height: 450px;
+    margin: 45px auto;
+    position: relative;
+
+}
+.main-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.orange {
+    position: absolute;
+    top: 45px;
+    left: 75px;
+    width: 270px;
+    height: 320px;
+    background-color: #ff6738;
+    border-radius: 0 135px 130px 0;
+}
+.orange img {
+    width: 390px;
+    position: absolute;
+    left: -52px;
+    top: 48px;
+}
+.gray {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 315px;
+    height: 310px;
+    background-color: #293041;
+}
+.main-content {
+    position: relative;
+    padding: 25px 30px;
+    color: white;
+}
+.main-content h3 {
+    color: #ff673b;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.icons {
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    display: flex;
+    gap: 21px;
+}
+.icons i {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icons i:hover {
+    color: #ff673b;
+    transform: translateY(-3px);
+}
+.main-content p {
+    margin-top: 68px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-content h1 {
+    margin-top: 9px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.price {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.price span {
+    font-size: 17px;
+    font-weight: bold;
+}
+.price del {
+    color: #8e929b;
+    font-size: 13px;
+}
+.size {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.size span {
+    font-size: 9px;
+    margin-right: 5px;
+    color: #ddd;
+}
+.size button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.size button:hover {
+    color: #ff673b;
+    transform: translateY(-2px);
+}
+.size button:focus {
+    color: #ff673b;
+    font-weight: bold;
+}
+.color {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.color span {
+    font-size: 9px;
+    margin-right: 5px;
+    color: #ddd;
+}
+.color button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.color button:hover {
+    border-color: white;
+}
+.yellow {
+    background-color: #ffc21c;
+}
+.black {
+    background-color: #050505;
+}
+.blue {
+    background-color: #159bc1;
+}
+.buttons {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.buttons i {
+    color: white;
+    font-size: 10px;
+}
+.btn1,
+.btn2 {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.buttons span {
+    color: white;
+    font-size: 10px;
+}
+.buttons span:hover {
+    color: #ff673b;
+    transition: 0.24s;
+    cursor: pointer;
+}
+.buttons i:hover {
+    color: #ff673b;
+    transition: 0.24s;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        overflow-x: hidden;
+    }
+    .main-container {
+        width: 90%;
+        max-width: 340px;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        z-index: 1;
+    }
+    .main-container>img {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .orange {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        border-radius: 0px 50% 0 0;
+        background-color: #ff673b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orange img {
+        position: relative;
+        width: 85%;
+        max-width: 260px;
+        left: 0%;
+        top: 0%;
+        transform: rotate(-15deg);
+    }
+    .gray {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: #293041;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .main-content p {
+        margin-top: 25px;
+    }
+
+}
